@@ -52,18 +52,18 @@ p {
     margin-bottom: 0;
 }
 
-/* Студия*/
+             /* Studio*/
+
+            /* Header */
 
 .page-header {
     border-bottom: 1px solid var(--border-footer);
 }
-
 .main-nav {
     align-items: center;
     display: flex;
 }
-
-.logo {
+.main-nav__logo {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -75,8 +75,7 @@ p {
     line-height: 1.19;
     text-decoration: none;
 }
-
-.logo span {
+.main-nav__text {
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
 
@@ -85,17 +84,13 @@ p {
     line-height: 1.19;
     text-decoration: none;
 }
-
 .site-nav {
     display: flex;
 }
-
-.site-nav .item+.item {
-    margin-left: 50px;
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
 }
-
-
-.site-nav .link {
+.site-nav__link {
     position: relative;
 
     display: block;
@@ -111,8 +106,7 @@ p {
 
     transition: color var(--timing-function);
 }
-
-.site-nav .link.current::after {
+.site-nav__link--current::after {
     content: '';
 
     display: block;
@@ -126,26 +120,22 @@ p {
     background-color: #2196F3;
     border-radius: 2px;
 }
-
-.site-nav .link.current {
+.site-nav__link--current {
     color: var(--accent-color);
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
     color: var(--accent-color);
 }
-
 .contacts {
     margin-left: auto;
     display: flex;
+    align-items: center;
 }
-
-.contacts .item+.item {
-    margin-left: 30px;
+.contacts__item:not(:last-child) {
+    margin-right: 30px;
 }
-
-.contacts .link {
+.contacts__link {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -161,21 +151,16 @@ p {
 
     transition: color var(--timing-function);
 }
-
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--accent-color)
 }
-
-.contacts.list {
-    display: flex;
-    align-items: center;
-}
-
-.contacts-icon {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }
+
+             /* Герой */
 
 .section-hero {
     max-width: 1600px;
@@ -195,8 +180,7 @@ p {
     background-size: cover;
 }
 
-
-.section-hero .title {
+.section-hero__title {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
@@ -218,18 +202,7 @@ button {
     font-family: inherit;
 }
 
-.button {
-    color: var(--title-text-color);
-    background-color: var(--primary-white-color);
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-
-    cursor: pointer;
-}
-
-.button.primary {
+.section-hero__btn {
     padding: 10px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -245,11 +218,13 @@ button {
     transition: background-color var(--timing-function);
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.section-hero__btn:hover,
+.section-hero__btn:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-bg-hover-color);
 }
+
+            /* Modal */
 
 .backdrop {
     position: fixed;
@@ -287,7 +262,7 @@ button {
 
     width: 528px;
     padding: 40px;
-    
+
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
