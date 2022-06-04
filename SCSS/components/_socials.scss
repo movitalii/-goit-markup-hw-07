@@ -1,41 +1,42 @@
+                  
                   /* Socials */
 
-                .socials {
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                }
+.socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-                .socials__link {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 44px;
-                    height: 44px;
+      &__icon {
+            fill: currentColor;
+            }
+}
 
-                    background-color: var(--primary-white-color);
-                    color: var(--socials-link-color);
+.socials__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
 
-                    border-radius: 50%;
+      background-color: var(--primary-white-color);
+      color: var(--socials-link-color);
 
-                    transition: background-color var(--timing-function),
-                          color var(--timing-function);
+      border-radius: 50%;
 
-                    &:hover,
-                    &:focus {
-                        background-color: var(--accent-color);
-                        color: var(--primary-white-color);
-                            }
-                }
+      transition: background-color var(--timing-function),
+                  color var(--timing-function);
+
+      &:hover,
+      &:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-white-color);
+      }
+}
                            
-                .socials__item {
-                      margin-bottom: 30px;
+.socials__item {
+      margin-bottom: 30px;
 
-                    &:not(:last-child) {
-                        margin-right: 10px;
-                        }
-                }
-
-                .socials__icon {
-                      fill: currentColor;
-                  }
+      &:not(:last-child) {
+      margin-right: 10px;
+      }
+}
