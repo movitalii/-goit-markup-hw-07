@@ -28,6 +28,25 @@
   margin: -1px;
 }
 
+.modal-form__btn, .footer-form__btn, .section-hero__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background-color var(--timing-function);
+  transition: background-color var(--timing-function);
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -387,22 +406,6 @@ button {
 .modal-form__btn {
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: background-color var(--timing-function);
-  transition: background-color var(--timing-function);
 }
 
 .modal-form__btn:focus, .modal-form__btn:hover {
@@ -572,29 +575,13 @@ textarea {
 }
 
 .footer-form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 29px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: background-color var(--timing-function);
-  transition: background-color var(--timing-function);
 }
 
 .footer-form__btn:hover, .footer-form__btn:focus {
@@ -800,17 +787,6 @@ textarea {
 
 .section-hero__btn {
   padding: 10px 32px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  cursor: pointer;
-  -webkit-transition: background-color var(--timing-function);
-  transition: background-color var(--timing-function);
 }
 
 .section-hero__btn:hover, .section-hero__btn:focus {

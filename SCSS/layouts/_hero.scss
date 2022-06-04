@@ -38,18 +38,8 @@
     
     &__btn {
             padding: 10px 32px;
-            border-radius: 4px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
-            color: var(--primary-white-color);
-            background-color: var(--accent-color);
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.9;
-    
-            cursor: pointer;
-    
-            transition: background-color var(--timing-function);
+            
+            @extend %btn;
         }
     
     &__btn:hover,
